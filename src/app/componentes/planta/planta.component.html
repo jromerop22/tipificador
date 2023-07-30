@@ -1,0 +1,41 @@
+<div class="container">
+  <h1 class="card-title mb-4 mt-4">Desplazamientos Planta Externa</h1>
+  <div class="card">
+    <div class="card-body">
+      <form
+        [formGroup]="plantaForm"
+        (ngSubmit)="onSubmit()"
+        class="row g-3 needs-validation"
+      >
+        <div class="col-md-4">
+          <label for="tipoServicio" class="form-label">Tipo de Servicio:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="tipoServicio"
+            formControlName="tipoServicio"
+            required
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="tipoServicio" class="form-label">Tipo de Servicio:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="tipoServicio"
+            formControlName="tipoServicio"
+            required
+          />
+        </div>
+        <div class="col-12 d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary" type="submit">
+            Generar Plantilla
+          </button>
+          <button class="btn btn-secondary" type="button" (click)="onReset()">
+            Reset
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
